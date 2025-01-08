@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /* have to do if we want to place the content in center with 'display: grid' */
+    display: grid;
+    place-content: center;
+    background: #E9E9E9;
+}
+
+.card {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+    background: white;
+    border-radius: .4em;
+    text-align: center;
+
+    /* box-shadow: horizontal vertical blur color; */
+    
+    /* --- SOFT SHADOW --- */ 
+    /* box-shadow: 10px 10px 10px rgba(0,0,0,0.1); */
+    /* .12 would be the max contrast we want to do because the soft shadow should be an afterthought, not the main focus */
+    
+    /* --- HARD SHADOW --- */
+    /* box-shadow: 0px 4px 3px rgba(0,0,0,0.1); */
+    /* horizontal and vertical properties should be low to in order to get the shadow close to the card element */
+    /* hard shadow contrast should not be more than .2 */
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0; /* gets rid of default 'margin-top' so whitespace is even all around the card */
+}
+
+.desc {
+    line-height: 1.7em;
+    font-size: .9em;
+    color: #4C4C4C;
+}
+
+a {
+    text-decoration: none;
+    background: #005BF7;
+    color: white;
+    display: inline-block;
+    padding: .7em 2em;
+    border-radius: 2em;
+    margin-top: 1em;
+}
